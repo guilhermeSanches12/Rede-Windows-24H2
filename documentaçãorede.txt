@@ -1,0 +1,14 @@
+Solução Problema Windows 24h2 
+
+Documentação do dia em que eu formatei meu computador para a versão do Windows 24H2 e não consegui mais acessar o servidor da empresa
+
+Para conseguir arrumar esse erro da nova versão do Windows 24H2 você precisa:
+win+r
+powershell (deve executa-lo como administrador)
+primeiro comando>> 	Set-SmbClientConfiguration -RequireSecuritySignature $false 
+colocar letra A e dar enter 
+segundo comando>>	Set-SmbClientConfiguration -EnableInsecureGuestLogons $true 
+letra A
+
+Assim que finalizar feche o powershell e entre no explorador de arquivos e digite o IP do servidor da empresa.
+
